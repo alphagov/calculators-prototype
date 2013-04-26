@@ -1,0 +1,9 @@
+<form>
+  <%= text_field("Enter your yearly earnings", "calculator.yearly") %>
+  <%= text_field("Number of people in household?", "calculator.people") %>
+</form>
+
+<p>Your yearly earnings: <%= output("calculator.yearly") %></p>
+<p>People in household: <%= output("calculator.people") %></p>
+
+<p>Cost due: <%= output("calculator.total") %></p>
